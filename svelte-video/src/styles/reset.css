@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, nav, section {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+input[type=submit], input[type=text] {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type=submit], button {
+  cursor: pointer;
+}
+
+input[type=submit]:focus, button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

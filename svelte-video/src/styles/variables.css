@@ -1,0 +1,29 @@
+:root {
+  --font-1: apercu, sans-serif;
+  --color-primary: #222;
+  --color-primary-rgb: 34, 34, 34;
+  --color-link: #222;
+  --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
+  --color-orange: #FA5D29;
+  --color-errors: #FA5D29;
+  --color-blue: #49B3FC;
+  --color-featured: #f8f0ee;
+  --color-underlined: var(--color-primary-rgb);
+  --text-size-small: 12px;
+  --text-size-primary: 16px;
+  --text-size-medium: 18px;
+  --text-size-large: 24px;
+  --border-gray: #ededed;
+  --color-dottets-rgb: 34, 34, 34;
+  --bg-primary: #F8F8F8;
+  --bg-primary-rgb: 248, 248, 248;
+  --bg-secondary: #222;
+  --bg-3rd: #ededed;
+  --bg-4rd: #f8f8f8;
+  --bg-white: white;
+  --innerWidth: 1816px;
+  --header-height: 71px;
+  --gutter: 20px;
+  --pad-inner: 52px;
+}

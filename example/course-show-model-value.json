@@ -1,0 +1,277 @@
+{
+  "id": "faa44a8c-16c1-42f1-add6-9dd6e0a4d524",
+  "slug": "webflow-cms-and-advanced-techniques",
+  "subtitles": true,
+  "lectures": {
+    "e42664fe-ad51-4f8d-aa86-3eb15d2a78c2": {
+      "id": "e42664fe-ad51-4f8d-aa86-3eb15d2a78c2",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "d036d8ef-e833-44c4-bd7b-4bb2b9d1c221"
+      },
+      "title": "Styleguide&#x20;Setup"
+    },
+    "172ce9b6-a459-45d4-8e36-2d7db06ad11c": {
+      "id": "172ce9b6-a459-45d4-8e36-2d7db06ad11c",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "d036d8ef-e833-44c4-bd7b-4bb2b9d1c221"
+      },
+      "title": "Typography"
+    },
+    "7a23c4b2-5155-431a-b4d2-04bf58561897": {
+      "id": "7a23c4b2-5155-431a-b4d2-04bf58561897",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "d036d8ef-e833-44c4-bd7b-4bb2b9d1c221"
+      },
+      "title": "Working&#x20;with&#x20;Color"
+    },
+    "4135eabe-2261-477d-a70c-23be0b09e139": {
+      "id": "4135eabe-2261-477d-a70c-23be0b09e139",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "d036d8ef-e833-44c4-bd7b-4bb2b9d1c221"
+      },
+      "title": "Components"
+    },
+    "f72e52ab-8b6e-4766-ad8a-3df87b10a60a": {
+      "id": "f72e52ab-8b6e-4766-ad8a-3df87b10a60a",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "6a83f565-ca30-4c04-9b2a-5dcac0cccc48"
+      },
+      "title": "Project&#x20;Overview"
+    },
+    "168f98e9-49d1-4c23-9273-22043c9e46aa": {
+      "id": "168f98e9-49d1-4c23-9273-22043c9e46aa",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "6a83f565-ca30-4c04-9b2a-5dcac0cccc48"
+      },
+      "title": "First&#x20;Collection"
+    },
+    "14ef6046-0171-4c10-accb-a7b9e07e8b07": {
+      "id": "14ef6046-0171-4c10-accb-a7b9e07e8b07",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "6a83f565-ca30-4c04-9b2a-5dcac0cccc48"
+      },
+      "title": "Collection&#x20;Setup"
+    },
+    "3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323": {
+      "id": "3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Blog&#x27;s&#x20;Menu"
+    },
+    "30801eea-33d0-40b3-a492-e666caaa7946": {
+      "id": "30801eea-33d0-40b3-a492-e666caaa7946",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Menu&#x20;Collections"
+    },
+    "f6f38a61-5e04-40ca-b67c-05eaba30a9d7": {
+      "id": "f6f38a61-5e04-40ca-b67c-05eaba30a9d7",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Featured&#x20;Article"
+    },
+    "3fb5343f-c788-4d7a-9ac1-552aa9e902f4": {
+      "id": "3fb5343f-c788-4d7a-9ac1-552aa9e902f4",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Recent&#x20;Articles"
+    },
+    "677e35a3-05f7-4aa0-8e47-e2436ef8c17a": {
+      "id": "677e35a3-05f7-4aa0-8e47-e2436ef8c17a",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Cards&#x20;Styles"
+    },
+    "d106c566-fe7c-41ae-857f-31cb3c876144": {
+      "id": "d106c566-fe7c-41ae-857f-31cb3c876144",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Main&#x20;Page&#x20;Sections"
+    },
+    "d5157f78-870d-4780-8959-fe53df8ccb09": {
+      "id": "d5157f78-870d-4780-8959-fe53df8ccb09",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "b876d025-7eb2-4710-8963-19e37459d41b"
+      },
+      "title": "Main&#x20;Page&#x20;Sections&#x20;part&#x20;2"
+    },
+    "88e0afa8-9da3-4042-9620-877b05b31f2b": {
+      "id": "88e0afa8-9da3-4042-9620-877b05b31f2b",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "332787b2-91d7-4120-9460-49344df6bb42"
+      },
+      "title": "All&#x20;Posts&#x20;Page"
+    },
+    "8925ebee-fca9-4b1c-a813-f9d27c2bef2f": {
+      "id": "8925ebee-fca9-4b1c-a813-f9d27c2bef2f",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "332787b2-91d7-4120-9460-49344df6bb42"
+      },
+      "title": "Category&#x20;Page"
+    },
+    "79ebb94b-7424-4500-b63b-b2a5c4363602": {
+      "id": "79ebb94b-7424-4500-b63b-b2a5c4363602",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "332787b2-91d7-4120-9460-49344df6bb42"
+      },
+      "title": "Blog&#x20;Post&#x20;Page"
+    },
+    "dde0ae2f-f07b-4b60-a666-964355f67a93": {
+      "id": "dde0ae2f-f07b-4b60-a666-964355f67a93",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "332787b2-91d7-4120-9460-49344df6bb42"
+      },
+      "title": "Post&#x20;Page&#x20;Aside"
+    },
+    "02ca0228-4ca3-4437-b8f5-097fd350b12c": {
+      "id": "02ca0228-4ca3-4437-b8f5-097fd350b12c",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Search&#x20;Setup"
+    },
+    "cdd0669a-a7fb-4f84-8cbc-2d0127102d69": {
+      "id": "cdd0669a-a7fb-4f84-8cbc-2d0127102d69",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Advanced&#x20;Search"
+    },
+    "2ea35844-39ad-4955-bc83-4187ea3519fd": {
+      "id": "2ea35844-39ad-4955-bc83-4187ea3519fd",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Custom&#x20;Domain"
+    },
+    "a8a36015-9588-449f-848d-f09ab587ddba": {
+      "id": "a8a36015-9588-449f-848d-f09ab587ddba",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Empty&#x20;States"
+    },
+    "027c6e53-f0b2-41b9-94b3-72b73856a608": {
+      "id": "027c6e53-f0b2-41b9-94b3-72b73856a608",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Website&#x20;Editor"
+    },
+    "d91e092b-0ff6-4fdc-a783-edc6085ef6ce": {
+      "id": "d91e092b-0ff6-4fdc-a783-edc6085ef6ce",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "SEO&#x20;Tips&#x20;part&#x20;1"
+    },
+    "f91a55a8-2501-4285-b1bf-2b2c70881347": {
+      "id": "f91a55a8-2501-4285-b1bf-2b2c70881347",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "SEO&#x20;Tips&#x20;part&#x20;2"
+    },
+    "df1bdf4d-eaa4-4b38-834a-2019283e88b4": {
+      "id": "df1bdf4d-eaa4-4b38-834a-2019283e88b4",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Site&#x20;Metadata"
+    },
+    "ef505f8c-d5fc-49f2-a82d-214c2c9faa34": {
+      "id": "ef505f8c-d5fc-49f2-a82d-214c2c9faa34",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "4a0aa25e-ebaa-4564-949e-ada1ac7e8903"
+      },
+      "title": "Using&#x20;Integrations"
+    },
+    "a65bdf0a-fee8-4853-ac37-ed970a25e132": {
+      "id": "a65bdf0a-fee8-4853-ac37-ed970a25e132",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "a961efb4-67eb-4ae1-96cc-f58e8ff8cadf"
+      },
+      "title": "See&#x20;you&#x20;soon"
+    },
+    "b7552e6b-180a-4b29-8737-45c4de49a960": {
+      "id": "b7552e6b-180a-4b29-8737-45c4de49a960",
+      "completed": false,
+      "start": 0,
+      "section": {
+        "id": "ef8c9ee2-7878-4ae1-baa8-6da9dc89c4b7"
+      },
+      "title": "Webflow&#x20;Tips&#x20;&amp;&#x20;Tricks"
+    }
+  },
+  "current_lecture": {
+    "id": "e42664fe-ad51-4f8d-aa86-3eb15d2a78c2",
+    "completed": false,
+    "start": 0,
+    "section": {
+      "id": "d036d8ef-e833-44c4-bd7b-4bb2b9d1c221"
+    },
+    "title": "Styleguide&#x20;Setup"
+  }
+}

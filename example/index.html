@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-cross-origin"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awwwards</title>
+    <meta name="theme-color" content="#3ea094">
+    <link rel="icon" href="https://assets.awwwards.com/assets/images/favicon.svg" type="image/svg+xml"/>
+    <link rel="mask-icon" href="https://assets.awwwards.com/assets/images/favicon-safari.svg" color="#000000"/>
+    <link rel="apple-touch-icon" href="https://www.awwwards.com/apple-touch-icon.png"/>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./site-style.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./site-style-sidebar.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./video-js.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./site-style-utils.css">
+
+</head>
+<body class="course-lecture">
+<div class="wrapper">
+    <header id="header" data-controller="search" data-search-url-value="tv_search_inspiration"
+            data-search-selected-type-value="inspiration">
+        <div class="inner">
+            <div class="c-header-main">
+                <div class="header-main" data-search-target="headerMain">
+                    <div class="header-main__overlay " data-search-target="overlay"
+                         data-action="click->search#close"></div>
+                    <div class="header-main__container">
+                        <div class="header-main__hamburger" data-search-target="hamburger"
+                             data-action="click->search#toggleMobile">
+                            <svg class="ico-svg" viewbox="0 0 20 20" width="16">
+                                <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#hamburger"></use>
+                            </svg>
+                        </div>
+                        <a href="/" class="header-main__logo" aria-label="Awwwards">
+                            <svg width="30" height="16" viewBox="0 0 30 16">
+                                <path d="m18.4 0-2.803 10.855L12.951 0H9.34L6.693 10.855 3.892 0H0l5.012 15.812h3.425l2.708-10.228 2.709 10.228h3.425L22.29 0h-3.892ZM24.77 13.365c0 1.506 1.12 2.635 2.615 2.635C28.879 16 30 14.87 30 13.365c0-1.506-1.12-2.636-2.615-2.636s-2.615 1.13-2.615 2.636Z"/>
+                            </svg>
+                        </a>
+                        <nav class="nav-header-main" data-search-target="navHeaderMain">
+                            <ul class="nav-header-main__list">
+                                <li class="nav-header-main__item has-dropdown">
+                                            <span class="nav-header-main__link" data-search-target="eLinksDD"
+                                                  data-action="click->search#toggleDropdown">
+                                                Explore
+
+                                                <svg class="ico-svg nav-header-main__arrow" viewbox="0 0 20 20"
+                                                     width="8">
+                                                    <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow-dd"></use>
+                                                </svg>
+                                            </span>
+                                    <div class="nav-header-main__dropdown">
+                                        <div class="nav-header-main__content">
+                                            <div class="search-inspiration">
+                                                <nav class="search-inspiration__nav">
+                                                    <ul class="search-inspiration__menu">
+                                                        <li>
+                                                                    <span class="search-inspiration__section"
+                                                                          data-section="nav"
+                                                                          data-search-target="navAwwards"
+                                                                          data-search-target="eSection"
+                                                                          data-action="click->search#doToogleTab">
+                                                                        <svg class="ico-svg search-inspiration__ico"
+                                                                             width="14" height="14" viewBox="0 0 14 14">
+                                                                            <path d="M11.9687 0.314283C12.237 0.379853 12.4013 0.650464 12.3357 0.918709L12.1157 1.81871C12.0501 2.08695 11.7795 2.25125 11.5113 2.18568C11.243 2.12011 11.0787 1.8495 11.1443 1.58126L11.3643 0.681255C11.4299 0.413011 11.7005 0.248712 11.9687 0.314283ZM1.80992 0.499794C2.06959 0.405868 2.35625 0.540236 2.45017 0.799914L2.79017 1.73991C2.8841 1.99959 2.74973 2.28624 2.49005 2.38017C2.23038 2.4741 1.94372 2.33973 1.8498 2.08005L1.5098 1.14005C1.41587 0.880372 1.55024 0.59372 1.80992 0.499794ZM9.72484 1.88893C9.92977 1.70384 10.2459 1.71991 10.431 1.92484L11.326 2.91575L12.5903 2.45965C12.8501 2.36594 13.1366 2.50055 13.2303 2.76031C13.324 3.02006 13.1894 3.3066 12.9297 3.40031L11.3497 3.97031C11.1587 4.03921 10.945 3.98579 10.8089 3.83513L9.68893 2.59513C9.50384 2.3902 9.51992 2.07403 9.72484 1.88893ZM4.36866 1.93899C4.59012 2.10394 4.63593 2.41719 4.47098 2.63865L3.39098 4.08865C3.27089 4.24989 3.06591 4.32351 2.87068 4.27554L1.12068 3.84554C0.852511 3.77965 0.688536 3.50884 0.754428 3.24067C0.82032 2.97251 1.09113 2.80853 1.35929 2.87443L2.78715 3.22527L3.66899 2.04131C3.83394 1.81985 4.14719 1.77404 4.36866 1.93899ZM9.16484 4.13893C9.36977 3.95384 9.68594 3.96991 9.87104 4.17484L10.766 5.16575L12.0303 4.70965C12.2901 4.61594 12.5766 4.75055 12.6703 5.01031C12.764 5.27006 12.6294 5.5566 12.3697 5.65031L10.7897 6.22031C10.5987 6.28921 10.385 6.23579 10.2489 6.08512L9.12893 4.84513C8.94384 4.6402 8.95992 4.32403 9.16484 4.13893ZM5.2082 4.29865C5.42985 4.46335 5.47602 4.77654 5.31132 4.9982L4.24132 6.4382C4.12129 6.59973 3.91611 6.67356 3.72068 6.62554L1.97068 6.19554C1.70251 6.12965 1.53854 5.85884 1.60443 5.59067C1.67032 5.32251 1.94113 5.15853 2.20929 5.22442L3.63675 5.57517L4.50865 4.40177C4.67335 4.18012 4.98655 4.13395 5.2082 4.29865ZM8.60484 6.38893C8.80977 6.20384 9.12594 6.21991 9.31104 6.42484L10.206 7.41575L11.4703 6.95965C11.7301 6.86594 12.0166 7.00055 12.1103 7.26031C12.204 7.52006 12.0694 7.8066 11.8097 7.90031L10.2297 8.47031C10.0387 8.53921 9.82502 8.48579 9.68893 8.33512L8.56893 7.09513C8.38384 6.8902 8.39992 6.57403 8.60484 6.38893ZM6.05866 6.64899C6.28012 6.81394 6.32593 7.12719 6.16098 7.34865L5.08098 8.79865C4.9603 8.96067 4.75399 9.03415 4.55807 8.98489L2.80807 8.54489C2.54026 8.47756 2.37774 8.20587 2.44508 7.93806C2.51241 7.67026 2.7841 7.50774 3.0519 7.57507L4.47831 7.93371L5.35899 6.75131C5.52394 6.52985 5.83719 6.48404 6.05866 6.64899ZM8.0432 8.64042C8.24731 8.45442 8.56355 8.4691 8.74955 8.6732L9.65542 9.66725L10.912 9.21904C11.1721 9.12627 11.4582 9.26191 11.5509 9.522C11.6437 9.7821 11.5081 10.0681 11.248 10.1609L9.93044 10.6309L9.43518 12.6207C9.36849 12.8887 9.09719 13.0519 8.82922 12.9852C8.56126 12.9185 8.39809 12.6472 8.46479 12.3792L8.96015 10.3889L8.01042 9.34676C7.82442 9.14266 7.8391 8.82642 8.0432 8.64042ZM6.89687 8.99766C7.11906 9.16163 7.16627 9.47467 7.0023 9.69687L6.09047 10.9325L6.84081 13.0317C6.93376 13.2917 6.79831 13.5779 6.53828 13.6708C6.27825 13.7638 5.99211 13.6283 5.89916 13.3683L5.14964 11.2714L3.66068 10.9055C3.39251 10.8396 3.22854 10.5688 3.29443 10.3007C3.36032 10.0325 3.63113 9.86853 3.89929 9.93443L5.32559 10.2849L6.19767 9.1031C6.36163 8.8809 6.67467 8.8337 6.89687 8.99766Z"/>
+                                                                        </svg>
+                                                                        Awards
+
+                                                                        <svg class="ico-svg search-inspiration__arrow"
+                                                                             viewbox="0 0 20 20" width="8">
+                                                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow-dd"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                            <ul class="search-inspiration__list">
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="/websites/" data-count="24K">
+                                                                                <span>Honor Mentions
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="/websites/nominees/" data-count="47K">
+                                                                                <span>Nominees
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="/websites/sites_of_the_day/"
+                                                                       data-count="5734">
+                                                                                <span>Sites of the Day
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="/websites/sites_of_the_month/"
+                                                                       data-count="214">
+                                                                                <span>Sites of the Month
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/sites_of_the_year/"
+                                                                       data-count="50">
+                                                                                <span>Sites of the Year
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/honors/winners"
+                                                                       data-count="">
+                                                                                <span>
+                                                                                    Honors
+																																					<span class="budget-tag budget-tag--solid--black">New</span>
+                                                                                </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="/winner-list/" data-count="">
+                                                                                <span>Most Awarded Profiles
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="/jury/2024/" data-count="">
+                                                                                <span>Jury 2024
+																																			</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                                    <span class="search-inspiration__section"
+                                                                          data-section="search"
+                                                                          data-search-target="navTrending"
+                                                                          data-search-target="eSection"
+                                                                          data-action="click->search#doToogleTab">
+                                                                        <svg class="ico-svg search-inspiration__ico"
+                                                                             width="11" height="15" viewBox="0 0 11 15">
+                                                                            <path d="M3.9929 0.625939C4.13088 0.54352 4.2886 0.5 4.44931 0.5C4.59954 0.5 4.74714 0.538023 4.87845 0.610295C8.87544 2.46727 11.1385 6.32323 10.9988 9.54683L10.9988 9.54716C10.9392 10.902 10.4542 12.1551 9.51453 13.0708C8.57487 13.9865 7.2248 14.5218 5.51533 14.5252C4.82872 14.5675 4.14047 14.4731 3.49048 14.2476C2.83534 14.0202 2.2323 13.6641 1.71685 13.2001C1.20139 12.7362 0.783938 12.1739 0.489046 11.5463C0.194154 10.9186 0.027783 10.2383 -0.000275804 9.54542L-0.000578149 9.53795L-0.000522329 9.53795C-0.0209942 8.73621 0.178555 7.94417 0.57646 7.24784C0.974365 6.55151 1.55542 5.97748 2.25655 5.58808C2.37945 5.51982 2.52542 5.50645 2.65867 5.55126C2.79193 5.59607 2.90017 5.69491 2.95686 5.82356C3.20152 6.37877 3.54425 6.88378 3.96732 7.31498C4.46391 6.66783 4.69233 5.83147 4.68558 4.91261C4.67754 3.81878 4.33395 2.64717 3.75882 1.64956C3.66486 1.49271 3.63053 1.30715 3.66234 1.1269C3.69467 0.943739 3.79303 0.77879 3.93881 0.663287C3.956 0.649664 3.97407 0.637188 3.9929 0.625939ZM4.94165 1.7577C5.40397 2.74496 5.67775 3.84365 5.68555 4.90526C5.69502 6.19406 5.31016 7.46724 4.34414 8.38726C4.15969 8.56293 3.87265 8.57185 3.67764 8.40797C3.12295 7.94184 2.65822 7.38047 2.30441 6.75183C1.95725 7.02235 1.66472 7.35895 1.4447 7.74398C1.13805 8.28062 0.98396 8.89087 0.999059 9.50871C1.02217 10.0671 1.15648 10.6152 1.39413 11.121C1.63231 11.628 1.96949 12.0822 2.38581 12.4569C2.80214 12.8315 3.28921 13.1192 3.81836 13.3028C4.34751 13.4865 4.90805 13.5624 5.46699 13.5262C5.47775 13.5255 5.48853 13.5252 5.49931 13.5252C7.00226 13.5252 8.09169 13.061 8.8166 12.3546C9.54444 11.6453 9.94941 10.6483 9.9998 9.50321C10.1142 6.86049 8.3102 3.53981 4.94165 1.7577ZM7.99932 9.02519C8.27546 9.02519 8.49932 9.24904 8.49932 9.52519C8.49932 10.1882 8.23592 10.8241 7.76708 11.293C7.29824 11.7618 6.66236 12.0252 5.99931 12.0252C5.72317 12.0252 5.49931 11.8013 5.49931 11.5252C5.49931 11.249 5.72317 11.0252 5.99931 11.0252C6.39714 11.0252 6.77867 10.8672 7.05997 10.5858C7.34128 10.3045 7.49931 9.92301 7.49931 9.52519C7.49931 9.24904 7.72317 9.02519 7.99932 9.02519Z"></path>
+                                                                        </svg>
+                                                                        Trending
+
+                                                                        <svg class="ico-svg search-inspiration__arrow"
+                                                                             viewbox="0 0 20 20" width="8">
+                                                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow-dd"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                            <ul class="search-inspiration__list">
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/portfolio/"
+                                                                       data-count="8754">
+                                                                        <span>Portfolio Websites</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/awwwards/collections/free-fonts/"
+                                                                       data-count="288">
+                                                                        <span>Free fonts</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/animation/"
+                                                                       data-count="10448">
+                                                                        <span>Animated websites</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/"
+                                                                       data-count="6234">
+                                                                        <span>Sites of the Day</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/scrolling/"
+                                                                       data-count="5232">
+                                                                        <span>Scrolling</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/single-page/"
+                                                                       data-count="5168">
+                                                                        <span>One page design</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/ui-design/"
+                                                                       data-count="6320">
+                                                                        <span>UI design</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/e-commerce/"
+                                                                       data-count="5680">
+                                                                        <span>E-commerce layouts</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/architecture/"
+                                                                       data-count="2480">
+                                                                        <span>Architecture websites</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/photography/"
+                                                                       data-count="1124">
+                                                                        <span>Photography websites</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                                    <span class="search-inspiration__section"
+                                                                          data-search-target="eSection"
+                                                                          data-action="click->search#doToogleTab">
+                                                                        <svg class="ico-svg search-inspiration__ico"
+                                                                             width="14" height="14" viewBox="0 0 14 14">
+                                                                            <path d="M11 0.5C11 0.223858 11.2239 0 11.5 0H12.5C12.8978 0 13.2794 0.158035 13.5607 0.43934C13.842 0.720644 14 1.10217 14 1.5V2.5C14 2.77614 13.7761 3 13.5 3C13.2239 3 13 2.77614 13 2.5V1.5C13 1.36739 12.9473 1.24022 12.8536 1.14645C12.7598 1.05268 12.6326 1 12.5 1H11.5C11.2239 1 11 0.776142 11 0.5Z M13.5 5C13.7761 5 14 5.22386 14 5.5V8.5C14 8.77614 13.7761 9 13.5 9C13.2239 9 13 8.77614 13 8.5V5.5C13 5.22386 13.2239 5 13.5 5Z M13.5 11C13.7761 11 14 11.2239 14 11.5V12.5C14 12.8978 13.842 13.2794 13.5607 13.5607C13.2794 13.842 12.8978 14 12.5 14H11.5C11.2239 14 11 13.7761 11 13.5C11 13.2239 11.2239 13 11.5 13H12.5C12.6326 13 12.7598 12.9473 12.8536 12.8536C12.9473 12.7598 13 12.6326 13 12.5V11.5C13 11.2239 13.2239 11 13.5 11Z M1.5 1C1.36739 1 1.24021 1.05268 1.14645 1.14645C1.05268 1.24021 1 1.36739 1 1.5V12.5C1 12.6326 1.05268 12.7598 1.14645 12.8536C1.24022 12.9473 1.36739 13 1.5 13H4.5C4.77614 13 5 13.2239 5 13.5C5 13.7761 4.77614 14 4.5 14H1.5C1.10217 14 0.720644 13.842 0.43934 13.5607C0.158035 13.2794 0 12.8978 0 12.5V1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0H4.5C4.77614 0 5 0.223858 5 0.5C5 0.776142 4.77614 1 4.5 1H1.5Z M6.5 0.5C6.5 0.223858 6.72386 0 7 0H8.5C8.77614 0 9 0.223858 9 0.5C9 0.776142 8.77614 1 8.5 1H7.5V13H8.5C8.77614 13 9 13.2239 9 13.5C9 13.7761 8.77614 14 8.5 14H7C6.72386 14 6.5 13.7761 6.5 13.5V0.5Z"/>
+                                                                        </svg>
+                                                                        By Category
+
+                                                                        <svg class="ico-svg search-inspiration__arrow"
+                                                                             viewbox="0 0 20 20" width="8">
+                                                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow-dd"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                            <ul class="search-inspiration__list">
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/e-commerce/"
+                                                                       data-count="5680">
+                                                                        <span>E-commerce</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/architecture/"
+                                                                       data-count="2480">
+                                                                        <span>Architecture</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/hotel-restaurant/"
+                                                                       data-count="1808">
+                                                                        <span>Restaurant &amp;Hotel</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/design-agencies/"
+                                                                       data-count="10480">
+                                                                        <span>Design Agencies</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/business-corporate/"
+                                                                       data-count="10474">
+                                                                        <span>Business &amp;Corporate</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/fashion/"
+                                                                       data-count="3152">
+                                                                        <span>Fashion</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/mobile-apps/"
+                                                                       data-count="2576">
+                                                                        <span>Mobile &amp;Apps</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/interaction-design/"
+                                                                       data-count="2696">
+                                                                        <span>Interaction Design</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/illustration/"
+                                                                       data-count="3536">
+                                                                        <span>Illustration</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/header-design/"
+                                                                       data-count="1040">
+                                                                        <span>Header Design</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                                    <span class="search-inspiration__section"
+                                                                          data-search-target="eSection"
+                                                                          data-action="click->search#doToogleTab">
+                                                                        <svg class="ico-svg search-inspiration__ico"
+                                                                             width="14" height="14" viewBox="0 0 14 14">
+                                                                            <path d="M0.5 8C0.776142 8 1 8.22386 1 8.5C1 8.63261 1.05268 8.75978 1.14645 8.85355C1.24022 8.94732 1.36739 9 1.5 9C1.77614 9 2 9.22386 2 9.5C2 9.77614 1.77614 10 1.5 10C1.10217 10 0.720644 9.84196 0.43934 9.56066C0.158035 9.27936 0 8.89782 0 8.5C0 8.22386 0.223858 8 0.5 8Z M0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0C1.77614 0 2 0.223858 2 0.5C2 0.776142 1.77614 1 1.5 1C1.36739 1 1.24021 1.05268 1.14645 1.14645C1.05268 1.24021 1 1.36739 1 1.5C1 1.77614 0.776142 2 0.5 2C0.223858 2 0 1.77614 0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934Z M8 0.5C8 0.223858 8.22386 0 8.5 0C8.89782 0 9.27936 0.158035 9.56066 0.43934C9.84196 0.720644 10 1.10217 10 1.5C10 1.77614 9.77614 2 9.5 2C9.22386 2 9 1.77614 9 1.5C9 1.36739 8.94732 1.24022 8.85355 1.14645C8.75978 1.05268 8.63261 1 8.5 1C8.22386 1 8 0.776142 8 0.5Z M3.5 0.5C3.5 0.223858 3.72386 0 4 0H6C6.27614 0 6.5 0.223858 6.5 0.5C6.5 0.776142 6.27614 1 6 1H4C3.72386 1 3.5 0.776142 3.5 0.5Z M0.5 3.5C0.776142 3.5 1 3.72386 1 4V6C1 6.27614 0.776142 6.5 0.5 6.5C0.223858 6.5 0 6.27614 0 6V4C0 3.72386 0.223858 3.5 0.5 3.5Z M9 4.5C9 4.22386 9.22386 4 9.5 4H12.5C12.8978 4 13.2794 4.15804 13.5607 4.43934C13.842 4.72064 14 5.10217 14 5.5V12.5C14 12.8978 13.842 13.2794 13.5607 13.5607C13.2794 13.842 12.8978 14 12.5 14H5.5C5.10217 14 4.72064 13.842 4.43934 13.5607C4.15804 13.2794 4 12.8978 4 12.5V9.5C4 9.22386 4.22386 9 4.5 9H8.5C8.63261 9 8.75979 8.94732 8.85355 8.85355C8.94732 8.75979 9 8.63261 9 8.5V4.5ZM10 5V8.5C10 8.89783 9.84196 9.27936 9.56066 9.56066C9.27936 9.84196 8.89783 10 8.5 10H5V12.5C5 12.6326 5.05268 12.7598 5.14645 12.8536C5.24022 12.9473 5.36739 13 5.5 13H12.5C12.6326 13 12.7598 12.9473 12.8536 12.8536C12.9473 12.7598 13 12.6326 13 12.5V5.5C13 5.36739 12.9473 5.24022 12.8536 5.14645C12.7598 5.05268 12.6326 5 12.5 5H10Z"/>
+                                                                        </svg>
+                                                                        By Technology
+
+                                                                        <svg class="ico-svg search-inspiration__arrow"
+                                                                             viewbox="0 0 20 20" width="8">
+                                                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow-dd"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                            <ul class="search-inspiration__list">
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/awwwards/collections/css-js-animations/"
+                                                                       data-count="304">
+                                                                        <span>CSS animations</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/wordpress/"
+                                                                       data-count="10444">
+                                                                        <span>Wordpress</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/shopify/"
+                                                                       data-count="707">
+                                                                        <span>Shopify</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/webgl/"
+                                                                       data-count="2960">
+                                                                        <span>WebGL sites</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/react/"
+                                                                       data-count="1776">
+                                                                        <span>React Websites</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/3d/"
+                                                                       data-count="3216">
+                                                                        <span>3D websites</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/figma/"
+                                                                       data-count="1584">
+                                                                        <span>Figma</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/gsap-animation/"
+                                                                       data-count="3696">
+                                                                        <span>Gsap</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/framer-motion/"
+                                                                       data-count="96">
+                                                                        <span>Framer</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="search-inspiration__item"
+                                                                       href="https://www.awwwards.com/websites/webflow/"
+                                                                       data-count="976">
+                                                                        <span>Webflow</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/collections/" class="search-inspiration__section">
+                                                                <svg class="ico-svg search-inspiration__ico" width="14"
+                                                                     height="14" viewBox="0 0 14 14">
+                                                                    <path d="M7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13C7.27614 13 7.5 13.2239 7.5 13.5C7.5 13.7761 7.27614 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 7.27614 13.7761 7.5 13.5 7.5C13.2239 7.5 13 7.27614 13 7C13 3.68629 10.3137 1 7 1Z M13.3237 8.59131C13.5856 8.679 13.7268 8.96235 13.6391 9.2242C13.5505 9.48866 13.4466 9.74606 13.3284 9.99533C13.2101 10.2449 12.912 10.3512 12.6624 10.2329C12.4129 10.1146 12.3065 9.81647 12.4248 9.56695C12.5261 9.35345 12.615 9.13305 12.6908 8.90666C12.7785 8.64481 13.0619 8.50362 13.3237 8.59131ZM12.3707 10.6962C12.5854 10.8699 12.6186 11.1847 12.445 11.3994C12.0963 11.8305 11.6975 12.2192 11.2574 12.5569C11.0383 12.725 10.7244 12.6837 10.5563 12.4646C10.3882 12.2455 10.4296 11.9316 10.6487 11.7635C11.0262 11.4739 11.3684 11.1403 11.6675 10.7705C11.8412 10.5558 12.156 10.5226 12.3707 10.6962ZM10.0856 12.7443C10.1974 12.9968 10.0833 13.2921 9.83081 13.4038C9.57865 13.5155 9.31864 13.6127 9.05183 13.6943C8.78778 13.7752 8.5082 13.6267 8.42736 13.3626C8.34652 13.0986 8.49504 12.819 8.75908 12.7381C8.98748 12.6682 9.2101 12.585 9.42604 12.4894C9.67855 12.3777 9.97386 12.4917 10.0856 12.7443Z"/>
+                                                                </svg>
+                                                                Collections
+
+                                                                <svg class="ico-svg search-inspiration__arrow"
+                                                                     viewbox="0 0 20 20" width="8">
+                                                                    <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow-dd"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/jobs/" class="search-inspiration__section">
+                                                                <svg class="ico-svg search-inspiration__ico" width="14"
+                                                                     height="6" viewBox="0 0 14 6">
+                                                                    <path d="M0 1.5C0 0.947715 0.447715 0.5 1 0.5H5C5.55228 0.5 6 0.947715 6 1.5V4.5C6 5.05228 5.55228 5.5 5 5.5H1C0.447715 5.5 0 5.05228 0 4.5V1.5ZM5 1.5H1V4.5H5V1.5Z M7.5 1.5C7.5 0.947715 7.94772 0.5 8.5 0.5H10.5C11.0523 0.5 11.5 0.947715 11.5 1.5V4.5C11.5 5.05228 11.0523 5.5 10.5 5.5H8.5C7.94772 5.5 7.5 5.05228 7.5 4.5V1.5ZM10.5 1.5H8.5V4.5H10.5V1.5Z M13.5 0.5C13.7761 0.5 14 0.723858 14 1V5C14 5.27614 13.7761 5.5 13.5 5.5C13.2239 5.5 13 5.27614 13 5V1C13 0.723858 13.2239 0.5 13.5 0.5Z"/>
+                                                                </svg>
+                                                                Jobs
+
+                                                            </a>
+                                                        <li>
+                                                            <a href="/blog/" class="search-inspiration__section">
+                                                                <svg class="ico-svg search-inspiration__ico" width="14"
+                                                                     height="14" viewBox="0 0 14 14">
+                                                                    <path d="M13.5 11C13.7761 11 14 11.2239 14 11.5V12.5C14 12.8978 13.842 13.2794 13.5607 13.5607C13.2794 13.842 12.8978 14 12.5 14H11.5C11.2239 14 11 13.7761 11 13.5C11 13.2239 11.2239 13 11.5 13H12.5C12.6326 13 12.7598 12.9473 12.8536 12.8536C12.9473 12.7598 13 12.6326 13 12.5V11.5C13 11.2239 13.2239 11 13.5 11Z M13.5 4C13.7761 4 14 4.22386 14 4.5V8.5C14 8.77614 13.7761 9 13.5 9C13.2239 9 13 8.77614 13 8.5V4.5C13 4.22386 13.2239 4 13.5 4Z M5 13.5C5 13.2239 5.22386 13 5.5 13H8.5C8.77614 13 9 13.2239 9 13.5C9 13.7761 8.77614 14 8.5 14H5.5C5.22386 14 5 13.7761 5 13.5Z M1.5 1C1.36739 1 1.24021 1.05268 1.14645 1.14645C1.05268 1.24021 1 1.36739 1 1.5V12.5C1 12.7761 0.776142 13 0.5 13C0.223858 13 0 12.7761 0 12.5V1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0H12.5C12.7761 0 13 0.223858 13 0.5C13 0.776142 12.7761 1 12.5 1H1.5Z"/>
+                                                                </svg>
+                                                                Blog
+
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <div class="search-inspiration__searching"
+                                                     data-search-target="autocompleteView">
+                                                    <div data-search-target="autocompleteTagsContainer">
+                                                        <ul class="search-inspiration__list"
+                                                            data-search-target="autocompleteTags"></ul>
+                                                    </div>
+                                                    <div data-search-target="autocompleteUsersContainer">
+                                                        <ul class="search-inspiration__list"
+                                                            data-search-target="autocompleteUsers"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nav-header-main__sponsor">
+                                                <div>Sponsored by</div>
+                                                <a rel="sponsored" target="_blank"
+                                                   href="https://webflow.com/?utm_source=awwwards&amp;utm_medium=referral&amp;utm_campaign=partnerships&amp;utm_content=menu">
+                                                    <img width="105"
+                                                         src="https://dhygzobemt712.cloudfront.net/Logo/Full_Logo_Black.svg"
+                                                         alt="Webflow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-header-main__item">
+                                    <a class="nav-header-main__link" href="/directory/">Directory
+                                    </a>
+                                </li>
+                                <li class="nav-header-main__item">
+                                    <a class="nav-header-main__link" href="/academy/">Academy
+                                    </a>
+                                </li>
+                                <li class="nav-header-main__item">
+                                    <a class="nav-header-main__link" href="https://conference.awwwards.com">
+                                        Conferences
+
+                                        <span class="budget-tag budget-tag--small--solid--black anim-shiny">
+                                                    <span>2</span>
+                                                </span>
+                                    </a>
+                                </li>
+                                <li class="nav-header-main__item">
+                                    <a class="nav-header-main__link" href="/market/">Market
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-header-main__social">
+                                <li>
+                                    <a href="https://www.facebook.com/awwwards" target="_blank">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="20">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/awwwards" target="_blank">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="20">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/awwwards" target="_blank">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="20">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/awwwards" target="_blank">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="20">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/awwwardstv" target="_blank">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="20">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tiktok.com/@awwwards.com" class="tiktok">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="20">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#tiktok"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-main__search">
+                            <div class="search-form">
+                                <div class="search-form__field">
+                                    <button type="submit" class="search-form__button" aria-label="Search">
+                                        <svg class="ico-svg" viewbox="0 0 20 20" width="14">
+                                            <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#lupe"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="" placeholder="Search by Inspiration"
+                                           class="search-form__input "
+                                           data-action="focus->search#show keyup->search#search"
+                                           data-search-target="input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-main__right">
+                            <div class="header-main__user">
+                                <div class="bt-dropdown-user">
+                                    <figure id="js-user-details"
+                                            data-user='{&quot;username&quot;:&quot;jmgiorgi&quot;,&quot;id&quot;:9473,&quot;displayName&quot;:&quot;jmgiorgi&quot;}'
+                                            class="circle-avatar">
+                                        <a class="bt-dropdown-user__link" href="/jmgiorgi/">
+                                            <img class="circle-avatar__img"
+                                                 src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/9473/50b3da0828427.jpeg"
+                                                 width="32" height="32" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="dropdown-user">
+                                        <ul class="dropdown-user__list">
+                                            <li>
+                                                <a class="dropdown-user__link" href="/plans/user-plans">
+                                                    Upgrade to <span class="budget budget--white">PRO</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="dropdown-user__list">
+                                            <li>
+                                                <a class="dropdown-user__link" href="/jmgiorgi/">Profile</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-user__link"
+                                                   href="/jmgiorgi/collections/">Collections</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-user__link" href="/settings/academy">Courses</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-user__link" href="/settings/notifications">Notifications
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="dropdown-user__list" style="padding: 10px 0px;">
+                                            <li>
+                                                <strong>
+                                                    <a class="dropdown-user__link"
+                                                       href="/settings/dashboard">Dashboard</a>
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                        <ul class="dropdown-user__list">
+                                            <li>
+                                                <a class="dropdown-user__link"
+                                                   href="/logout?_csrf_token=63fa39fe7c9c05aed16.8nyPBcaPgYFg9A-Yo99gOyFcPGBGi0MbMcW6Kv4Iy9U.kST1dp-is-VZx2vC0eklbFU3CxkjsgtpUPzuc8ZL8viaHelL9eP35xSheA">Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-main__bts">
+                                <a href="/pro" class="button button--small--rounded">Be Pro
+                                </a>
+                                <a href="/submit/" class="button button--small--outline--rounded">Submit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="content">
+        <div class="block block-playlist courseID"
+             data-model="{&quot;id&quot;:&quot;faa44a8c-16c1-42f1-add6-9dd6e0a4d524&quot;,&quot;slug&quot;:&quot;webflow-cms-and-advanced-techniques&quot;,&quot;subtitles&quot;:true,&quot;lectures&quot;:{&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;:{&quot;id&quot;:&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Styleguide Setup&quot;},&quot;172ce9b6-a459-45d4-8e36-2d7db06ad11c&quot;:{&quot;id&quot;:&quot;172ce9b6-a459-45d4-8e36-2d7db06ad11c&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Typography&quot;},&quot;7a23c4b2-5155-431a-b4d2-04bf58561897&quot;:{&quot;id&quot;:&quot;7a23c4b2-5155-431a-b4d2-04bf58561897&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Working with Color&quot;},&quot;4135eabe-2261-477d-a70c-23be0b09e139&quot;:{&quot;id&quot;:&quot;4135eabe-2261-477d-a70c-23be0b09e139&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Components&quot;},&quot;f72e52ab-8b6e-4766-ad8a-3df87b10a60a&quot;:{&quot;id&quot;:&quot;f72e52ab-8b6e-4766-ad8a-3df87b10a60a&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;},&quot;title&quot;:&quot;Project Overview&quot;},&quot;168f98e9-49d1-4c23-9273-22043c9e46aa&quot;:{&quot;id&quot;:&quot;168f98e9-49d1-4c23-9273-22043c9e46aa&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;},&quot;title&quot;:&quot;First Collection&quot;},&quot;14ef6046-0171-4c10-accb-a7b9e07e8b07&quot;:{&quot;id&quot;:&quot;14ef6046-0171-4c10-accb-a7b9e07e8b07&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;},&quot;title&quot;:&quot;Collection Setup&quot;},&quot;3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323&quot;:{&quot;id&quot;:&quot;3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Blog&#039;s Menu&quot;},&quot;30801eea-33d0-40b3-a492-e666caaa7946&quot;:{&quot;id&quot;:&quot;30801eea-33d0-40b3-a492-e666caaa7946&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Menu Collections&quot;},&quot;f6f38a61-5e04-40ca-b67c-05eaba30a9d7&quot;:{&quot;id&quot;:&quot;f6f38a61-5e04-40ca-b67c-05eaba30a9d7&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Featured Article&quot;},&quot;3fb5343f-c788-4d7a-9ac1-552aa9e902f4&quot;:{&quot;id&quot;:&quot;3fb5343f-c788-4d7a-9ac1-552aa9e902f4&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Recent Articles&quot;},&quot;677e35a3-05f7-4aa0-8e47-e2436ef8c17a&quot;:{&quot;id&quot;:&quot;677e35a3-05f7-4aa0-8e47-e2436ef8c17a&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Cards Styles&quot;},&quot;d106c566-fe7c-41ae-857f-31cb3c876144&quot;:{&quot;id&quot;:&quot;d106c566-fe7c-41ae-857f-31cb3c876144&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Main Page Sections&quot;},&quot;d5157f78-870d-4780-8959-fe53df8ccb09&quot;:{&quot;id&quot;:&quot;d5157f78-870d-4780-8959-fe53df8ccb09&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Main Page Sections part 2&quot;},&quot;88e0afa8-9da3-4042-9620-877b05b31f2b&quot;:{&quot;id&quot;:&quot;88e0afa8-9da3-4042-9620-877b05b31f2b&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;All Posts Page&quot;},&quot;8925ebee-fca9-4b1c-a813-f9d27c2bef2f&quot;:{&quot;id&quot;:&quot;8925ebee-fca9-4b1c-a813-f9d27c2bef2f&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;Category Page&quot;},&quot;79ebb94b-7424-4500-b63b-b2a5c4363602&quot;:{&quot;id&quot;:&quot;79ebb94b-7424-4500-b63b-b2a5c4363602&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;Blog Post Page&quot;},&quot;dde0ae2f-f07b-4b60-a666-964355f67a93&quot;:{&quot;id&quot;:&quot;dde0ae2f-f07b-4b60-a666-964355f67a93&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;Post Page Aside&quot;},&quot;02ca0228-4ca3-4437-b8f5-097fd350b12c&quot;:{&quot;id&quot;:&quot;02ca0228-4ca3-4437-b8f5-097fd350b12c&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Search Setup&quot;},&quot;cdd0669a-a7fb-4f84-8cbc-2d0127102d69&quot;:{&quot;id&quot;:&quot;cdd0669a-a7fb-4f84-8cbc-2d0127102d69&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Advanced Search&quot;},&quot;2ea35844-39ad-4955-bc83-4187ea3519fd&quot;:{&quot;id&quot;:&quot;2ea35844-39ad-4955-bc83-4187ea3519fd&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Custom Domain&quot;},&quot;a8a36015-9588-449f-848d-f09ab587ddba&quot;:{&quot;id&quot;:&quot;a8a36015-9588-449f-848d-f09ab587ddba&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Empty States&quot;},&quot;027c6e53-f0b2-41b9-94b3-72b73856a608&quot;:{&quot;id&quot;:&quot;027c6e53-f0b2-41b9-94b3-72b73856a608&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Website Editor&quot;},&quot;d91e092b-0ff6-4fdc-a783-edc6085ef6ce&quot;:{&quot;id&quot;:&quot;d91e092b-0ff6-4fdc-a783-edc6085ef6ce&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;SEO Tips part 1&quot;},&quot;f91a55a8-2501-4285-b1bf-2b2c70881347&quot;:{&quot;id&quot;:&quot;f91a55a8-2501-4285-b1bf-2b2c70881347&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;SEO Tips part 2&quot;},&quot;df1bdf4d-eaa4-4b38-834a-2019283e88b4&quot;:{&quot;id&quot;:&quot;df1bdf4d-eaa4-4b38-834a-2019283e88b4&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Site Metadata&quot;},&quot;ef505f8c-d5fc-49f2-a82d-214c2c9faa34&quot;:{&quot;id&quot;:&quot;ef505f8c-d5fc-49f2-a82d-214c2c9faa34&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Using Integrations&quot;},&quot;a65bdf0a-fee8-4853-ac37-ed970a25e132&quot;:{&quot;id&quot;:&quot;a65bdf0a-fee8-4853-ac37-ed970a25e132&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;a961efb4-67eb-4ae1-96cc-f58e8ff8cadf&quot;},&quot;title&quot;:&quot;See you soon&quot;},&quot;b7552e6b-180a-4b29-8737-45c4de49a960&quot;:{&quot;id&quot;:&quot;b7552e6b-180a-4b29-8737-45c4de49a960&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;ef8c9ee2-7878-4ae1-baa8-6da9dc89c4b7&quot;},&quot;title&quot;:&quot;Webflow Tips &amp; Tricks&quot;}},&quot;current_lecture&quot;:{&quot;id&quot;:&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Styleguide Setup&quot;}}"
+             data-id=faa44a8c-16c1-42f1-add6-9dd6e0a4d524 data-controller="academy--course-show"
+             data-academy--course-show-model-value="&#x7B;&quot;id&quot;&#x3A;&quot;faa44a8c-16c1-42f1-add6-9dd6e0a4d524&quot;,&quot;slug&quot;&#x3A;&quot;webflow-cms-and-advanced-techniques&quot;,&quot;subtitles&quot;&#x3A;true,&quot;lectures&quot;&#x3A;&#x7B;&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Styleguide&#x20;Setup&quot;&#x7D;,&quot;172ce9b6-a459-45d4-8e36-2d7db06ad11c&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;172ce9b6-a459-45d4-8e36-2d7db06ad11c&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Typography&quot;&#x7D;,&quot;7a23c4b2-5155-431a-b4d2-04bf58561897&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;7a23c4b2-5155-431a-b4d2-04bf58561897&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Working&#x20;with&#x20;Color&quot;&#x7D;,&quot;4135eabe-2261-477d-a70c-23be0b09e139&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4135eabe-2261-477d-a70c-23be0b09e139&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Components&quot;&#x7D;,&quot;f72e52ab-8b6e-4766-ad8a-3df87b10a60a&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;f72e52ab-8b6e-4766-ad8a-3df87b10a60a&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Project&#x20;Overview&quot;&#x7D;,&quot;168f98e9-49d1-4c23-9273-22043c9e46aa&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;168f98e9-49d1-4c23-9273-22043c9e46aa&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;First&#x20;Collection&quot;&#x7D;,&quot;14ef6046-0171-4c10-accb-a7b9e07e8b07&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;14ef6046-0171-4c10-accb-a7b9e07e8b07&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Collection&#x20;Setup&quot;&#x7D;,&quot;3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Blog&#x27;s&#x20;Menu&quot;&#x7D;,&quot;30801eea-33d0-40b3-a492-e666caaa7946&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;30801eea-33d0-40b3-a492-e666caaa7946&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Menu&#x20;Collections&quot;&#x7D;,&quot;f6f38a61-5e04-40ca-b67c-05eaba30a9d7&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;f6f38a61-5e04-40ca-b67c-05eaba30a9d7&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Featured&#x20;Article&quot;&#x7D;,&quot;3fb5343f-c788-4d7a-9ac1-552aa9e902f4&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;3fb5343f-c788-4d7a-9ac1-552aa9e902f4&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Recent&#x20;Articles&quot;&#x7D;,&quot;677e35a3-05f7-4aa0-8e47-e2436ef8c17a&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;677e35a3-05f7-4aa0-8e47-e2436ef8c17a&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Cards&#x20;Styles&quot;&#x7D;,&quot;d106c566-fe7c-41ae-857f-31cb3c876144&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d106c566-fe7c-41ae-857f-31cb3c876144&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Main&#x20;Page&#x20;Sections&quot;&#x7D;,&quot;d5157f78-870d-4780-8959-fe53df8ccb09&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d5157f78-870d-4780-8959-fe53df8ccb09&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Main&#x20;Page&#x20;Sections&#x20;part&#x20;2&quot;&#x7D;,&quot;88e0afa8-9da3-4042-9620-877b05b31f2b&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;88e0afa8-9da3-4042-9620-877b05b31f2b&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;All&#x20;Posts&#x20;Page&quot;&#x7D;,&quot;8925ebee-fca9-4b1c-a813-f9d27c2bef2f&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;8925ebee-fca9-4b1c-a813-f9d27c2bef2f&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Category&#x20;Page&quot;&#x7D;,&quot;79ebb94b-7424-4500-b63b-b2a5c4363602&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;79ebb94b-7424-4500-b63b-b2a5c4363602&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Blog&#x20;Post&#x20;Page&quot;&#x7D;,&quot;dde0ae2f-f07b-4b60-a666-964355f67a93&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;dde0ae2f-f07b-4b60-a666-964355f67a93&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Post&#x20;Page&#x20;Aside&quot;&#x7D;,&quot;02ca0228-4ca3-4437-b8f5-097fd350b12c&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;02ca0228-4ca3-4437-b8f5-097fd350b12c&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Search&#x20;Setup&quot;&#x7D;,&quot;cdd0669a-a7fb-4f84-8cbc-2d0127102d69&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;cdd0669a-a7fb-4f84-8cbc-2d0127102d69&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Advanced&#x20;Search&quot;&#x7D;,&quot;2ea35844-39ad-4955-bc83-4187ea3519fd&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;2ea35844-39ad-4955-bc83-4187ea3519fd&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Custom&#x20;Domain&quot;&#x7D;,&quot;a8a36015-9588-449f-848d-f09ab587ddba&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;a8a36015-9588-449f-848d-f09ab587ddba&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Empty&#x20;States&quot;&#x7D;,&quot;027c6e53-f0b2-41b9-94b3-72b73856a608&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;027c6e53-f0b2-41b9-94b3-72b73856a608&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Website&#x20;Editor&quot;&#x7D;,&quot;d91e092b-0ff6-4fdc-a783-edc6085ef6ce&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d91e092b-0ff6-4fdc-a783-edc6085ef6ce&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;SEO&#x20;Tips&#x20;part&#x20;1&quot;&#x7D;,&quot;f91a55a8-2501-4285-b1bf-2b2c70881347&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;f91a55a8-2501-4285-b1bf-2b2c70881347&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;SEO&#x20;Tips&#x20;part&#x20;2&quot;&#x7D;,&quot;df1bdf4d-eaa4-4b38-834a-2019283e88b4&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;df1bdf4d-eaa4-4b38-834a-2019283e88b4&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Site&#x20;Metadata&quot;&#x7D;,&quot;ef505f8c-d5fc-49f2-a82d-214c2c9faa34&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;ef505f8c-d5fc-49f2-a82d-214c2c9faa34&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Using&#x20;Integrations&quot;&#x7D;,&quot;a65bdf0a-fee8-4853-ac37-ed970a25e132&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;a65bdf0a-fee8-4853-ac37-ed970a25e132&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;a961efb4-67eb-4ae1-96cc-f58e8ff8cadf&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;See&#x20;you&#x20;soon&quot;&#x7D;,&quot;b7552e6b-180a-4b29-8737-45c4de49a960&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;b7552e6b-180a-4b29-8737-45c4de49a960&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;ef8c9ee2-7878-4ae1-baa8-6da9dc89c4b7&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Webflow&#x20;Tips&#x20;&amp;&#x20;Tricks&quot;&#x7D;&#x7D;,&quot;current_lecture&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;,&quot;completed&quot;&#x3A;false,&quot;start&quot;&#x3A;0,&quot;section&quot;&#x3A;&#x7B;&quot;id&quot;&#x3A;&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;&#x7D;,&quot;title&quot;&#x3A;&quot;Styleguide&#x20;Setup&quot;&#x7D;&#x7D;">
+            <div class="content">
+                <div class="box-lecture" data-academy--course-show-target="playerContainer">
+                    <video id="video" class="js-video video-js"
+                           data-videoUrl="/academy/course/m3files/e42664fe-ad51-4f8d-aa86-3eb15d2a78c2"
+                           data-id="faa44a8c-16c1-42f1-add6-9dd6e0a4d524" crossorigin="anonymous"></video>
+                </div>
+                <div class="box-head-video">
+                    <div class="inner">
+                        <div class="left">
+                            <a href="/academy/course/webflow-cms-and-advanced-techniques" class="title text-black">
+                                <svg width="15" height="12" viewBox="0 0 15 12" fill="none">
+                                    <path d="M0.906019 6.85259L5.18305 11.6645C5.45842 11.9929 6.00273 12.0222 6.32206 11.7363C6.64138 11.4505 6.6736 10.9052 6.37761 10.5952L3.28677 7.11991H13.804C14.2469 7.11991 14.606 6.76084 14.606 6.31793C14.606 5.87499 14.2469 5.51595 13.804 5.51595H3.28677L6.37761 2.04067C6.6736 1.7307 6.63355 1.18636 6.31423 0.900509C5.9949 0.61468 5.45842 0.642967 5.18305 0.971355L0.906019 5.78327C0.626767 6.17231 0.649008 6.52158 0.906019 6.85259Z"
+                                          fill="black"></path>
+                                </svg>
+                                Webflow: CMS and Advanced Techniques
+
+                            </a>
+                        </div>
+                        <div class="right">
+                            <div class="by">
+                                        <span>
+                                            By
+                                            <strong>
+                                                <a href="/gregrog/" class="text-black">Greg Rog</a>
+                                            </strong>
+                                        </span>
+                                <img class="img-circle grayscale"
+                                     src="https://assets.awwwards.com/awards/speaker/60585dc73247e239972460.jpg"
+                                     width="34" height="34" alt="Greg Rog">
+                                <div class="stars-evaluate rating " data-stars="4" data-controller="open-modal"
+                                     data-open-modal-id-value="modal-evaluate-course" data-open-modal-size-value="small"
+                                     data-open-modal-clone-value="false">
+                                    <svg class="star" data-rating="1" width="24" height="24" viewBox="0 0 24 24">
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                                style="fill:url(#star-1-half)"/>
+                                        <defs>
+                                            <linearGradient id="star-1-half">
+                                                <stop offset="50%" stop-opacity="1" stop-color="black"></stop>
+                                                <stop offset="50%" stop-opacity="0" stop-color="black"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg class="star" data-rating="2" width="24" height="24" viewBox="0 0 24 24">
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                                style="fill:url(#star-2-half)"/>
+                                        <defs>
+                                            <linearGradient id="star-2-half">
+                                                <stop offset="50%" stop-opacity="1" stop-color="black"></stop>
+                                                <stop offset="50%" stop-opacity="0" stop-color="black"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg class="star" data-rating="3" width="24" height="24" viewBox="0 0 24 24">
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                                style="fill:url(#star-3-half)"/>
+                                        <defs>
+                                            <linearGradient id="star-3-half">
+                                                <stop offset="50%" stop-opacity="1" stop-color="black"></stop>
+                                                <stop offset="50%" stop-opacity="0" stop-color="black"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg class="star" data-rating="4" width="24" height="24" viewBox="0 0 24 24">
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                                style="fill:url(#star-4-half)"/>
+                                        <defs>
+                                            <linearGradient id="star-4-half">
+                                                <stop offset="50%" stop-opacity="1" stop-color="black"></stop>
+                                                <stop offset="50%" stop-opacity="0" stop-color="black"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <svg class="star" data-rating="5" width="24" height="24" viewBox="0 0 24 24">
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                        <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                                style="fill:url(#star-5-half)"/>
+                                        <defs>
+                                            <linearGradient id="star-5-half">
+                                                <stop offset="50%" stop-opacity="1" stop-color="black"></stop>
+                                                <stop offset="50%" stop-opacity="0" stop-color="black"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="box-playlist">
+                        <div class="row title header">
+                            <div class="left">Course content</div>
+                            <div class="right">
+                                <div class="box-playlist-toggle" data-controller="academy--toggle-sidebar"
+                                     data-action="click->academy--toggle-sidebar#toggle">
+                                            <span class="box-playlist-toggle__close">
+                                                <svg class="ico-svg" viewbox="0 0 20 20" width="12">
+                                                    <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#close"></use>
+                                                </svg>
+                                            </span>
+                                    <span class="box-playlist-toggle__open">
+                                                <svg class="ico-svg ico-svg--reflect" viewbox="0 0 20 20" width="14">
+                                                    <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#arrow"></use>
+                                                </svg>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-sections">
+                            <li class="js-section-d036d8ef-e833-44c4-bd7b-4bb2b9d1c221  active "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>Working with Style Guide</strong>
+                                    </div>
+                                    <div>1/7 43:46 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-e42664fe-ad51-4f8d-aa86-3eb15d2a78c2 show js-current-lecture">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="e42664fe-ad51-4f8d-aa86-3eb15d2a78c2"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_e42664fe-ad51-4f8d-aa86-3eb15d2a78c2">
+                                                <label for="label_e42664fe-ad51-4f8d-aa86-3eb15d2a78c2"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;e42664fe-ad51-4f8d-aa86-3eb15d2a78c2&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Styleguide Setup&quot;}">
+                                                <div class="title">Styleguide Setup</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    09:45 Mins
+
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="https://videocdn.awwwards.com/files/ba569ef0-96b4-11eb-9e45-e719f070ef74/mt9oH0Epl3xVPosf-Webflow-Advanced.zip?st=3FFJeLT8hY9znYCPEuewlA&amp;e=1726114433"
+                                                   class="link-underlined green">DOWNLOAD RESOURCES
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-172ce9b6-a459-45d4-8e36-2d7db06ad11c ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="172ce9b6-a459-45d4-8e36-2d7db06ad11c"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_172ce9b6-a459-45d4-8e36-2d7db06ad11c">
+                                                <label for="label_172ce9b6-a459-45d4-8e36-2d7db06ad11c"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;172ce9b6-a459-45d4-8e36-2d7db06ad11c&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Typography&quot;}">
+                                                <div class="title">Typography</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    09:56 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-7a23c4b2-5155-431a-b4d2-04bf58561897 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="7a23c4b2-5155-431a-b4d2-04bf58561897"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_7a23c4b2-5155-431a-b4d2-04bf58561897">
+                                                <label for="label_7a23c4b2-5155-431a-b4d2-04bf58561897"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;7a23c4b2-5155-431a-b4d2-04bf58561897&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Working with Color&quot;}">
+                                                <div class="title">Working with Color</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    10:32 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-4135eabe-2261-477d-a70c-23be0b09e139 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="4135eabe-2261-477d-a70c-23be0b09e139"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_4135eabe-2261-477d-a70c-23be0b09e139">
+                                                <label for="label_4135eabe-2261-477d-a70c-23be0b09e139"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;4135eabe-2261-477d-a70c-23be0b09e139&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;d036d8ef-e833-44c4-bd7b-4bb2b9d1c221&quot;},&quot;title&quot;:&quot;Components&quot;}">
+                                                <div class="title">Components</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    13:32 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-section-6a83f565-ca30-4c04-9b2a-5dcac0cccc48 "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>CMS Setup</strong>
+                                    </div>
+                                    <div>2/7 33:24 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-f72e52ab-8b6e-4766-ad8a-3df87b10a60a ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="f72e52ab-8b6e-4766-ad8a-3df87b10a60a"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_f72e52ab-8b6e-4766-ad8a-3df87b10a60a">
+                                                <label for="label_f72e52ab-8b6e-4766-ad8a-3df87b10a60a"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;f72e52ab-8b6e-4766-ad8a-3df87b10a60a&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;},&quot;title&quot;:&quot;Project Overview&quot;}">
+                                                <div class="title">Project Overview</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    06:19 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-168f98e9-49d1-4c23-9273-22043c9e46aa ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="168f98e9-49d1-4c23-9273-22043c9e46aa"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_168f98e9-49d1-4c23-9273-22043c9e46aa">
+                                                <label for="label_168f98e9-49d1-4c23-9273-22043c9e46aa"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;168f98e9-49d1-4c23-9273-22043c9e46aa&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;},&quot;title&quot;:&quot;First Collection&quot;}">
+                                                <div class="title">First Collection</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    08:57 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-14ef6046-0171-4c10-accb-a7b9e07e8b07 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="14ef6046-0171-4c10-accb-a7b9e07e8b07"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_14ef6046-0171-4c10-accb-a7b9e07e8b07">
+                                                <label for="label_14ef6046-0171-4c10-accb-a7b9e07e8b07"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;14ef6046-0171-4c10-accb-a7b9e07e8b07&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;6a83f565-ca30-4c04-9b2a-5dcac0cccc48&quot;},&quot;title&quot;:&quot;Collection Setup&quot;}">
+                                                <div class="title">Collection Setup</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    18:08 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-section-b876d025-7eb2-4710-8963-19e37459d41b "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>Menu and Homepage</strong>
+                                    </div>
+                                    <div>3/7 1 Hour 3 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323">
+                                                <label for="label_3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;3bf8ff88-2ccb-4eda-b8ee-3cc78ae4f323&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Blog&#039;s Menu&quot;}">
+                                                <div class="title">Blog &#039;s Menu</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    06:32 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-30801eea-33d0-40b3-a492-e666caaa7946 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="30801eea-33d0-40b3-a492-e666caaa7946"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_30801eea-33d0-40b3-a492-e666caaa7946">
+                                                <label for="label_30801eea-33d0-40b3-a492-e666caaa7946"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;30801eea-33d0-40b3-a492-e666caaa7946&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Menu Collections&quot;}">
+                                                <div class="title">Menu Collections</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    08:43 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-f6f38a61-5e04-40ca-b67c-05eaba30a9d7 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="f6f38a61-5e04-40ca-b67c-05eaba30a9d7"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_f6f38a61-5e04-40ca-b67c-05eaba30a9d7">
+                                                <label for="label_f6f38a61-5e04-40ca-b67c-05eaba30a9d7"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;f6f38a61-5e04-40ca-b67c-05eaba30a9d7&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Featured Article&quot;}">
+                                                <div class="title">Featured Article</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    13:17 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-3fb5343f-c788-4d7a-9ac1-552aa9e902f4 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="3fb5343f-c788-4d7a-9ac1-552aa9e902f4"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_3fb5343f-c788-4d7a-9ac1-552aa9e902f4">
+                                                <label for="label_3fb5343f-c788-4d7a-9ac1-552aa9e902f4"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;3fb5343f-c788-4d7a-9ac1-552aa9e902f4&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Recent Articles&quot;}">
+                                                <div class="title">Recent Articles</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    08:17 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-677e35a3-05f7-4aa0-8e47-e2436ef8c17a ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="677e35a3-05f7-4aa0-8e47-e2436ef8c17a"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_677e35a3-05f7-4aa0-8e47-e2436ef8c17a">
+                                                <label for="label_677e35a3-05f7-4aa0-8e47-e2436ef8c17a"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;677e35a3-05f7-4aa0-8e47-e2436ef8c17a&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Cards Styles&quot;}">
+                                                <div class="title">Cards Styles</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    10:02 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-d106c566-fe7c-41ae-857f-31cb3c876144 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="d106c566-fe7c-41ae-857f-31cb3c876144"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_d106c566-fe7c-41ae-857f-31cb3c876144">
+                                                <label for="label_d106c566-fe7c-41ae-857f-31cb3c876144"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;d106c566-fe7c-41ae-857f-31cb3c876144&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Main Page Sections&quot;}">
+                                                <div class="title">Main Page Sections</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    09:13 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-d5157f78-870d-4780-8959-fe53df8ccb09 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="d5157f78-870d-4780-8959-fe53df8ccb09"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_d5157f78-870d-4780-8959-fe53df8ccb09">
+                                                <label for="label_d5157f78-870d-4780-8959-fe53df8ccb09"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;d5157f78-870d-4780-8959-fe53df8ccb09&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;b876d025-7eb2-4710-8963-19e37459d41b&quot;},&quot;title&quot;:&quot;Main Page Sections part 2&quot;}">
+                                                <div class="title">Main Page Sections part 2</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    07:54 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-section-332787b2-91d7-4120-9460-49344df6bb42 "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>Other Pages</strong>
+                                    </div>
+                                    <div>4/7 29:39 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-88e0afa8-9da3-4042-9620-877b05b31f2b ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="88e0afa8-9da3-4042-9620-877b05b31f2b"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_88e0afa8-9da3-4042-9620-877b05b31f2b">
+                                                <label for="label_88e0afa8-9da3-4042-9620-877b05b31f2b"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;88e0afa8-9da3-4042-9620-877b05b31f2b&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;All Posts Page&quot;}">
+                                                <div class="title">All Posts Page</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    07:49 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-8925ebee-fca9-4b1c-a813-f9d27c2bef2f ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="8925ebee-fca9-4b1c-a813-f9d27c2bef2f"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_8925ebee-fca9-4b1c-a813-f9d27c2bef2f">
+                                                <label for="label_8925ebee-fca9-4b1c-a813-f9d27c2bef2f"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;8925ebee-fca9-4b1c-a813-f9d27c2bef2f&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;Category Page&quot;}">
+                                                <div class="title">Category Page</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    03:49 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-79ebb94b-7424-4500-b63b-b2a5c4363602 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="79ebb94b-7424-4500-b63b-b2a5c4363602"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_79ebb94b-7424-4500-b63b-b2a5c4363602">
+                                                <label for="label_79ebb94b-7424-4500-b63b-b2a5c4363602"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;79ebb94b-7424-4500-b63b-b2a5c4363602&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;Blog Post Page&quot;}">
+                                                <div class="title">Blog Post Page</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    11:09 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-dde0ae2f-f07b-4b60-a666-964355f67a93 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="dde0ae2f-f07b-4b60-a666-964355f67a93"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_dde0ae2f-f07b-4b60-a666-964355f67a93">
+                                                <label for="label_dde0ae2f-f07b-4b60-a666-964355f67a93"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;dde0ae2f-f07b-4b60-a666-964355f67a93&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;332787b2-91d7-4120-9460-49344df6bb42&quot;},&quot;title&quot;:&quot;Post Page Aside&quot;}">
+                                                <div class="title">Post Page Aside</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    06:52 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-section-4a0aa25e-ebaa-4564-949e-ada1ac7e8903 "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>Extras</strong>
+                                    </div>
+                                    <div>5/7 1 Hour 17 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-02ca0228-4ca3-4437-b8f5-097fd350b12c ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="02ca0228-4ca3-4437-b8f5-097fd350b12c"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_02ca0228-4ca3-4437-b8f5-097fd350b12c">
+                                                <label for="label_02ca0228-4ca3-4437-b8f5-097fd350b12c"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;02ca0228-4ca3-4437-b8f5-097fd350b12c&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Search Setup&quot;}">
+                                                <div class="title">Search Setup</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    10:44 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-cdd0669a-a7fb-4f84-8cbc-2d0127102d69 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="cdd0669a-a7fb-4f84-8cbc-2d0127102d69"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_cdd0669a-a7fb-4f84-8cbc-2d0127102d69">
+                                                <label for="label_cdd0669a-a7fb-4f84-8cbc-2d0127102d69"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;cdd0669a-a7fb-4f84-8cbc-2d0127102d69&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Advanced Search&quot;}">
+                                                <div class="title">Advanced Search</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    12:36 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-2ea35844-39ad-4955-bc83-4187ea3519fd ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="2ea35844-39ad-4955-bc83-4187ea3519fd"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_2ea35844-39ad-4955-bc83-4187ea3519fd">
+                                                <label for="label_2ea35844-39ad-4955-bc83-4187ea3519fd"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;2ea35844-39ad-4955-bc83-4187ea3519fd&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Custom Domain&quot;}">
+                                                <div class="title">Custom Domain</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    08:51 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-a8a36015-9588-449f-848d-f09ab587ddba ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="a8a36015-9588-449f-848d-f09ab587ddba"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_a8a36015-9588-449f-848d-f09ab587ddba">
+                                                <label for="label_a8a36015-9588-449f-848d-f09ab587ddba"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;a8a36015-9588-449f-848d-f09ab587ddba&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Empty States&quot;}">
+                                                <div class="title">Empty States</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    05:31 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-027c6e53-f0b2-41b9-94b3-72b73856a608 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="027c6e53-f0b2-41b9-94b3-72b73856a608"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_027c6e53-f0b2-41b9-94b3-72b73856a608">
+                                                <label for="label_027c6e53-f0b2-41b9-94b3-72b73856a608"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;027c6e53-f0b2-41b9-94b3-72b73856a608&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Website Editor&quot;}">
+                                                <div class="title">Website Editor</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    08:59 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-d91e092b-0ff6-4fdc-a783-edc6085ef6ce ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="d91e092b-0ff6-4fdc-a783-edc6085ef6ce"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_d91e092b-0ff6-4fdc-a783-edc6085ef6ce">
+                                                <label for="label_d91e092b-0ff6-4fdc-a783-edc6085ef6ce"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;d91e092b-0ff6-4fdc-a783-edc6085ef6ce&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;SEO Tips part 1&quot;}">
+                                                <div class="title">SEO Tips part 1</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    10:34 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-f91a55a8-2501-4285-b1bf-2b2c70881347 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="f91a55a8-2501-4285-b1bf-2b2c70881347"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_f91a55a8-2501-4285-b1bf-2b2c70881347">
+                                                <label for="label_f91a55a8-2501-4285-b1bf-2b2c70881347"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;f91a55a8-2501-4285-b1bf-2b2c70881347&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;SEO Tips part 2&quot;}">
+                                                <div class="title">SEO Tips part 2</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    07:40 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-df1bdf4d-eaa4-4b38-834a-2019283e88b4 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="df1bdf4d-eaa4-4b38-834a-2019283e88b4"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_df1bdf4d-eaa4-4b38-834a-2019283e88b4">
+                                                <label for="label_df1bdf4d-eaa4-4b38-834a-2019283e88b4"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;df1bdf4d-eaa4-4b38-834a-2019283e88b4&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Site Metadata&quot;}">
+                                                <div class="title">Site Metadata</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    07:22 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="js-video-lesson js-lecture-ef505f8c-d5fc-49f2-a82d-214c2c9faa34 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="ef505f8c-d5fc-49f2-a82d-214c2c9faa34"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_ef505f8c-d5fc-49f2-a82d-214c2c9faa34">
+                                                <label for="label_ef505f8c-d5fc-49f2-a82d-214c2c9faa34"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;ef505f8c-d5fc-49f2-a82d-214c2c9faa34&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;4a0aa25e-ebaa-4564-949e-ada1ac7e8903&quot;},&quot;title&quot;:&quot;Using Integrations&quot;}">
+                                                <div class="title">Using Integrations</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    09:57 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-section-a961efb4-67eb-4ae1-96cc-f58e8ff8cadf "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>Thank you</strong>
+                                    </div>
+                                    <div>6/7 00:45 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-a65bdf0a-fee8-4853-ac37-ed970a25e132 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="a65bdf0a-fee8-4853-ac37-ed970a25e132"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_a65bdf0a-fee8-4853-ac37-ed970a25e132">
+                                                <label for="label_a65bdf0a-fee8-4853-ac37-ed970a25e132"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;a65bdf0a-fee8-4853-ac37-ed970a25e132&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;a961efb4-67eb-4ae1-96cc-f58e8ff8cadf&quot;},&quot;title&quot;:&quot;See you soon&quot;}">
+                                                <div class="title">See you soon</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    00:45 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="js-section-ef8c9ee2-7878-4ae1-baa8-6da9dc89c4b7 "
+                                data-controller="academy--open-section">
+                                <div class="row title" data-action="click->academy--open-section#open">
+                                    <div>
+                                        <strong>Bonus</strong>
+                                    </div>
+                                    <div>7/7 24:20 Mins</div>
+                                </div>
+                                <ul class="list-chapters">
+                                    <li class="js-video-lesson js-lecture-b7552e6b-180a-4b29-8737-45c4de49a960 ">
+                                        <div class="row ">
+                                            <div class="input-check" data-lecture="b7552e6b-180a-4b29-8737-45c4de49a960"
+                                                 data-action="click->academy--course-show#checkFinishLecture">
+                                                <input disabled="" type="checkbox"
+                                                       id="label_b7552e6b-180a-4b29-8737-45c4de49a960">
+                                                <label for="label_b7552e6b-180a-4b29-8737-45c4de49a960"></label>
+                                            </div>
+                                            <div class="js-lecture"
+                                                 data-action="click->academy--course-show#navigateToLecture"
+                                                 data-model="{&quot;id&quot;:&quot;b7552e6b-180a-4b29-8737-45c4de49a960&quot;,&quot;completed&quot;:false,&quot;start&quot;:0,&quot;section&quot;:{&quot;id&quot;:&quot;ef8c9ee2-7878-4ae1-baa8-6da9dc89c4b7&quot;},&quot;title&quot;:&quot;Webflow Tips &amp; Tricks&quot;}">
+                                                <div class="title">Webflow Tips &amp;Tricks</div>
+                                                <div class="time">
+                                                    <svg class="ico-svg 14" viewbox="0 0 20 20" width="13.48">
+                                                        <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#play"></use>
+                                                    </svg>
+                                                    24:20 Mins
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="box-progress">
+                            <div class="info">
+                                <div class="info-item">
+                                    <span class="text-uppercase">Your progress</span>
+                                </div>
+                                <div class="info-item">
+                                    <svg class="ico" width="18" height="18" viewBox="0 0 14 14">
+                                        <path d="M10.524 5.337c0 .282-.114.536-.298.723a1.026 1.026 0 01-1.444 0 1.025 1.025 0 01.001-1.445 1.026 1.026 0 011.444.001c.185.185.297.44.297.721zm.087 3.72a5.362 5.362 0 01-3.803 1.574 5.365 5.365 0 01-3.803-1.574.33.33 0 01.465-.465 4.71 4.71 0 003.338 1.383 4.7 4.7 0 003.338-1.383.328.328 0 01.465 0 .328.328 0 010 .465zm1.338-7.006A6.975 6.975 0 007 0a6.975 6.975 0 00-4.949 2.051A6.979 6.979 0 000 7c0 1.933.785 3.683 2.051 4.949A6.975 6.975 0 007 14c1.934 0 3.684-.785 4.95-2.051S14 8.934 14 7a6.979 6.979 0 00-2.051-4.949zM5.214 4.619a1.027 1.027 0 010 1.444 1.026 1.026 0 01-1.443-.001 1.009 1.009 0 01-.299-.722c0-.281.115-.536.298-.722a1.023 1.023 0 011.444.001z"/>
+                                    </svg>
+                                    <div class="percentage"></div>
+                                </div>
+                            </div>
+                            <div class="box-bar">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner" data-controller="tabs">
+                    <div class="box-info-tabs">
+                        <ul class="list-tabs style2">
+                            <li class="active js-selector-tab" data-tab="overview">Overview
+                            </li>
+                            <li class="js-selector-tab" data-tab="documentation">
+                                Documentation
+                                &nbsp;<strong>(1)</strong>
+                            </li>
+                            <li class="js-selector-tab" data-tab="sources">
+                                Sources
+                                &nbsp;<strong>(4)</strong>
+                            </li>
+                        </ul>
+                        <div class="box-right has-desktop">
+                                    <span class="certificate text-black"
+                                          data-action="click->academy--course-show#showCertificate">
+                                        Certificate
+
+                                        <svg width="25" height="27" viewBox="0 0 25 27">
+                                            <path d="M9.78589 26.7778H2.17572C1.17134 26.7778 0.354614 25.946 0.354614 24.9243V2.21202C0.354614 1.1916 1.17134 0.360626 2.17572 0.360626H22.8234C23.8286 0.360626 24.6453 1.1916 24.6453 2.21202V24.9243C24.6453 25.946 23.8286 26.7778 22.8234 26.7778H15.2911H9.78589ZM22.8242 1.43831H2.17572C1.75465 1.43831 1.41364 1.78533 1.41364 2.21202V8.69704V10.5992V24.9354C1.41364 25.3617 1.75465 25.7083 2.17572 25.7083H22.8234C23.2427 25.7083 23.5838 25.3617 23.5838 24.9354V10.5997V8.69747V2.21202C23.5846 1.78533 23.2432 1.43831 22.8242 1.43831ZM20.3406 12.005C19.4891 11.4117 19.3235 10.2298 19.9699 9.37904C20.6168 8.5274 20.294 7.80967 19.2523 7.78297C18.2115 7.75628 17.4427 6.85427 17.5431 5.77788C17.6447 4.70192 16.9911 4.27524 16.0909 4.82979C15.1907 5.38435 14.0639 5.04765 13.5865 4.08235C13.1091 3.11704 12.3331 3.11704 11.8616 4.08235C11.3884 5.04765 10.2616 5.38435 9.3572 4.82979C8.45025 4.27524 7.79661 4.70192 7.90421 5.77788C8.01096 6.85427 7.24168 7.75671 6.19494 7.78297C5.14735 7.80967 4.82498 8.52783 5.47777 9.37904C6.13055 10.2298 5.96323 11.4117 5.10711 12.005C4.24887 12.5983 4.35986 13.3798 5.35111 13.7419C6.34532 14.1035 6.83205 15.189 6.4364 16.1551C6.03948 17.1196 6.54908 17.7172 7.56659 17.4804C8.58368 17.2431 9.57155 17.889 9.76259 18.9154C9.9528 19.9397 10.6983 20.1623 11.4181 19.4088C12.1386 18.6562 13.3141 18.6562 14.0292 19.4088C14.7443 20.1623 15.4894 19.9393 15.6847 18.9154C15.8808 17.889 16.8687 17.2431 17.8819 17.4804C18.894 17.7172 19.4027 17.1196 19.0113 16.1551C18.6224 15.189 19.1091 14.1031 20.0962 13.7419C21.0832 13.3802 21.1925 12.5983 20.3406 12.005ZM12.7215 16.8466C9.91001 16.8466 7.62929 14.5315 7.62929 11.6726C7.62929 8.81415 9.91001 6.4982 12.7215 6.4982C15.5334 6.4982 17.8121 8.81415 17.8121 11.6726C17.8121 14.5315 15.5334 16.8466 12.7215 16.8466ZM12.7215 7.47254C10.4383 7.47254 8.58877 9.35278 8.58877 11.6726C8.58877 13.9924 10.4383 15.8727 12.7215 15.8727C15.0039 15.8727 16.8534 13.9924 16.8534 11.6726C16.8534 9.35278 15.0039 7.47254 12.7215 7.47254ZM12.9265 14.0071H11.7862L10.6064 11.5456H11.7464L12.3564 12.8188L14.0284 9.33857H15.1674L12.9265 14.0071ZM20.1229 21.4876H3.86127V21.8617H20.1229V21.4876ZM17.8121 22.477H3.86127V22.8511H17.8121V22.477ZM19.6573 23.4673H3.86127V23.8414H19.6573V23.4673Z"
+                                                  fill="#272C2E"/>
+                                        </svg>
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="content-tab js-content-tab active" id="overview">
+                        <div class="entry">
+                            <div class="entry-text">
+                                <p>
+                                    In this course, you will learn <strong>how to use more advanced features of Webflow
+                                    - CMS,</strong>
+                                    build the Style Guide that might later become full-fledged Design System, connect
+                                    Webflow to the no-code software through Integrations and more. We’re going to learn
+                                    on practical example of the Blog, that we’ll build from scratch and equip with some
+                                    CMS superpowers. We’ll also allow our clients to edit readymade website and add
+                                    articles, add powerful search engine and connect our own domain. Ready to get
+                                    started?
+                                </p>
+                            </div>
+                            <div class="box-title">
+                                <div class="left">Teacher</div>
+                                <div class="right">Learn from the best</div>
+                            </div>
+                            <ul class="list-info-speakers">
+                                <li>
+                                    <div class="photo">
+                                        <img width="133"
+                                             src="https://assets.awwwards.com/awards/media/cache/speaker_thumb/speaker/60585dc73247e239972460.jpg"
+                                             data-srcset="https://assets.awwwards.com/awards/media/cache/speaker_thumb/speaker/60585dc73247e239972460.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/speaker/60585dc73247e239972460.jpg 2x"
+                                             class="lazy" alt="Greg Rog">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Greg Rog </h3>
+                                        <div>Founder of learnux.io</div>
+                                        <p>
+                                            <strong>
+                                                <a target="_blank" rel="noopener" href="https://twitter.com/greg_rog"
+                                                   class="text-black">@greg_rog</a>
+                                            </strong>
+                                        </p>
+                                        <p>Designer with 15+ years experience. Design mentor, Fortune 500 companies
+                                            UI/UX consultant. Smashing Magazine Author, passionate teacher, serial
+                                            entrepreneur and… happy dad :-) Always curious and result oriented. Running
+                                            one of the biggest IT training platforms in Poland - eduweb.pl and a few
+                                            educational side projects in English like codeless.how and learnux.io.
+                                            Recently focusing on building a framework for Webflow on systemflow.co.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-tab js-content-tab" id="documentation">
+                        <ul class="list-resources">
+                            <li>
+                                <a href="https://videocdn.awwwards.com/files/ba569ef0-96b4-11eb-9e45-e719f070ef74/mt9oH0Epl3xVPosf-Webflow-Advanced.zip?st=3FFJeLT8hY9znYCPEuewlA&amp;e=1726114433"
+                                   class="item">
+                                    <div class="left">
+                                        <div class="ico-file">
+                                            <svg width="16" viewBox="0 0 17.25 21.75">
+                                                <path d="M17.138 4.612l-4.5-4.5A.362.362 0 0012.375 0H1.447A1.455 1.455 0 000 1.447v7.178a.375.375 0 00.75 0V1.447A.696.696 0 011.447.75H12v4.125a.374.374 0 00.375.375H16.5v15.053a.696.696 0 01-.697.697H1.447a.696.696 0 01-.697-.697v-1.928c0-.1-.04-.195-.11-.266S.475 18 .375 18a.374.374 0 00-.375.375v1.928a1.455 1.455 0 001.447 1.447h14.355a1.455 1.455 0 001.447-1.447V4.875a.354.354 0 00-.111-.263zM12.75 1.283L15.967 4.5H12.75V1.283z"/>
+                                            </svg>
+                                            <div class="ext">zip</div>
+                                        </div>
+                                        <strong>Course Documentation</strong>
+                                    </div>
+                                    <div class="right">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M0 11.556a.889.889 0 111.778 0v2.666h12.444v-2.666a.889.889 0 011.778 0v3.555a.901.901 0 01-.889.889H.89A.901.901 0 010 15.111v-3.555zM8 0a.9.9 0 00-.889.889v7.336L5.274 6.388a.889.889 0 00-1.256 1.256l3.354 3.354A.922.922 0 008 11.26a.922.922 0 00.628-.26l3.354-3.355a.89.89 0 00-1.256-1.256L8.889 8.225V.89A.9.9 0 008 0z"
+                                                  fill="#000"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-tab js-content-tab" id="sources">
+                        <ul class="list-sources">
+                            <li>
+                                <a href="https://www.w3schools.com/tags/tag_meta.asp" class="item-link"
+                                   rel="noopener nofollow" target="_blank" aria-label="W3 School - Meta"></a>
+                                <figure class="photo">
+                                    <img width="70"
+                                         src="https://assets.awwwards.com/awards/gallery/2021/03/resource-w3shools.jpg"
+                                         alt="W3 School - Meta">
+                                </figure>
+                                <div class="info">
+                                    <div>
+                                        <strong>W3 School - Meta</strong>
+                                    </div>
+                                    <div class="url">
+                                        w3schools.com/tags/tag_meta.asp
+
+                                        <svg width="14" height="14" viewBox="0 0 14 14">
+                                            <path d="M7 13.999a.539.539 0 110-1.077A5.922 5.922 0 107 1.078 5.922 5.922 0 001.077 7 .54.54 0 010 7a7 7 0 117 6.999zM9.384 5.27l-.029 4.468c0 .718-1.077.718-1.075 0l.005-2.995c0-.148-.086-.183-.191-.077l-4.14 4.139a.537.537 0 11-.759-.759l4.14-4.14c.105-.104.071-.19-.076-.19l-2.998.004c-.717 0-.716-1.075.001-1.076l4.451-.04a.662.662 0 01.671.666z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://developers.google.com/search/docs/advanced/robots/robots_meta_tag"
+                                   class="item-link" rel="noopener nofollow" target="_blank"
+                                   aria-label="Robot Meta Tags"></a>
+                                <figure class="photo">
+                                    <img width="70"
+                                         src="https://assets.awwwards.com/awards/gallery/2021/03/resource-googledevs.jpg"
+                                         alt="Robot Meta Tags">
+                                </figure>
+                                <div class="info">
+                                    <div>
+                                        <strong>Robot Meta Tags</strong>
+                                    </div>
+                                    <div class="url">
+                                        developers.google.com/search/docs/advanced/robots/robots_meta_tag
+
+                                        <svg width="14" height="14" viewBox="0 0 14 14">
+                                            <path d="M7 13.999a.539.539 0 110-1.077A5.922 5.922 0 107 1.078 5.922 5.922 0 001.077 7 .54.54 0 010 7a7 7 0 117 6.999zM9.384 5.27l-.029 4.468c0 .718-1.077.718-1.075 0l.005-2.995c0-.148-.086-.183-.191-.077l-4.14 4.139a.537.537 0 11-.759-.759l4.14-4.14c.105-.104.071-.19-.076-.19l-2.998.004c-.717 0-.716-1.075.001-1.076l4.451-.04a.662.662 0 01.671.666z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://webflow.com" class="item-link" rel="noopener nofollow" target="_blank"
+                                   aria-label="Webflow"></a>
+                                <figure class="photo">
+                                    <img width="70"
+                                         src="https://assets.awwwards.com/awards/gallery/2021/03/resource-webflow.jpg"
+                                         alt="Webflow">
+                                </figure>
+                                <div class="info">
+                                    <div>
+                                        <strong>Webflow</strong>
+                                    </div>
+                                    <div class="url">
+                                        webflow.com
+
+                                        <svg width="14" height="14" viewBox="0 0 14 14">
+                                            <path d="M7 13.999a.539.539 0 110-1.077A5.922 5.922 0 107 1.078 5.922 5.922 0 001.077 7 .54.54 0 010 7a7 7 0 117 6.999zM9.384 5.27l-.029 4.468c0 .718-1.077.718-1.075 0l.005-2.995c0-.148-.086-.183-.191-.077l-4.14 4.139a.537.537 0 11-.759-.759l4.14-4.14c.105-.104.071-.19-.076-.19l-2.998.004c-.717 0-.716-1.075.001-1.076l4.451-.04a.662.662 0 01.671.666z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://codeless.how" class="item-link" rel="noopener nofollow" target="_blank"
+                                   aria-label="Codeless.how"></a>
+                                <figure class="photo">
+                                    <img width="70"
+                                         src="https://assets.awwwards.com/awards/gallery/2021/03/resource-codeless"
+                                         alt="Codeless.how">
+                                </figure>
+                                <div class="info">
+                                    <div>
+                                        <strong>Codeless.how</strong>
+                                    </div>
+                                    <div class="url">
+                                        codeless.how
+
+                                        <svg width="14" height="14" viewBox="0 0 14 14">
+                                            <path d="M7 13.999a.539.539 0 110-1.077A5.922 5.922 0 107 1.078 5.922 5.922 0 001.077 7 .54.54 0 010 7a7 7 0 117 6.999zM9.384 5.27l-.029 4.468c0 .718-1.077.718-1.075 0l.005-2.995c0-.148-.086-.183-.191-.077l-4.14 4.139a.537.537 0 11-.759-.759l4.14-4.14c.105-.104.071-.19-.076-.19l-2.998.004c-.717 0-.716-1.075.001-1.076l4.451-.04a.662.662 0 01.671.666z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="is-hidden" id="modal-evaluate-course" data-controller="academy--rating"
+             data-academy--rating-route-value="&#x2F;academy&#x2F;review&#x2F;faa44a8c-16c1-42f1-add6-9dd6e0a4d524&#x2F;rate-it">
+            <div class="m-alert__header">
+                <h2 class="m-alert__title">
+                    <strong>Evaluate this course</strong>
+                    <br>Your opinion matters
+
+                </h2>
+                <div>
+                    <strong>4</strong>
+                    opinions <strong>2.8</strong>
+                </div>
+            </div>
+            <div class="m-alert__content">
+                <p data-academy--rating-target="ratingMessage" class="msg_rating mb-lg text-center"></p>
+                <div class="form-evaluate">
+                    <div class="stars-evaluate large" data-academy--rating-target="stars" data-stars="4">
+                        <svg data-action="mouseenter->academy--rating#hover click->academy--rating#rate" class="star"
+                             data-rating="1" width="24" height="24" viewBox="0 0 24 24">
+                            <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg data-action="mouseenter->academy--rating#hover click->academy--rating#rate" class="star"
+                             data-rating="2" width="24" height="24" viewBox="0 0 24 24">
+                            <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg data-action="mouseenter->academy--rating#hover click->academy--rating#rate" class="star"
+                             data-rating="3" width="24" height="24" viewBox="0 0 24 24">
+                            <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg data-action="mouseenter->academy--rating#hover click->academy--rating#rate" class="star"
+                             data-rating="4" width="24" height="24" viewBox="0 0 24 24">
+                            <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <svg data-action="mouseenter->academy--rating#hover click->academy--rating#rate" class="star"
+                             data-rating="5" width="24" height="24" viewBox="0 0 24 24">
+                            <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="form-field ">
+                        <label class="form-field__label">Comment</label>
+                        <textarea class="text-input" id="comment" placeholder="Please give us your comments"
+                                  data-academy--rating-target="contentInput"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="m-alert__bts">
+                <span class="button button--large--black--rounded" data-action="click->academy--rating#send">Send</span>
+            </div>
+        </div>
+        <div class="menu-float  js-menufloat-show  style-1">
+            <div class="inner">
+                <div class="menu-float__inner">
+                    <div class="bt-nav bt-nav--left is-hidden js-gototop">
+                        <svg width="18" height="22" viewBox="0 0 18 22">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8.69899 3.08174L7.76441 4.02584L7.75493 4.0258L1.3542 10.4265L0.0117182 9.08405L6.41245 2.68332L8.69707 0.398693L10.0396 1.74118L17.4565 9.15817L16.1159 10.4893L9.66059 4.0339L8.69899 3.08174ZM8.22508 5.69881L10.4911 7.2949L10.5527 21.8672L8.29342 21.8576L8.22508 5.69881Z"/>
+                        </svg>
+                    </div>
+                    <div class="menu-float__wrapper">
+                        <div class="menu-float__top">
+                            <div class="menu-float__menu menu-main" id="menu-main">
+                                <div class="menu-float__menu-content">
+                                    <div class="menu-float__menu--main">
+                                        <div class="menu-float__menu-col style-2 ">
+                                            <div class="menu-float__menu-section">Awards</div>
+                                            <ul class="menu-float__menu-nav">
+                                                <li>
+                                                    <a href="/websites/" class="menu-float__sub-item ">Winners
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/websites/nominees/" class="menu-float__sub-item ">Nominees
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/websites/sites_of_the_day/" class="menu-float__sub-item">Sites
+                                                        of the Day
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/websites/sites_of_the_month/"
+                                                       class="menu-float__sub-item">Sites of the Month
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-float__menu-col style-1">
+                                            <div class="menu-float__menu-row style-1 ">
+                                                <div class="menu-float__menu-section">Inspiration</div>
+                                                <ul class="menu-float__menu-nav">
+                                                    <li>
+                                                        <a href="/collections/" class="menu-float__sub-item">Collections
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/elements/" class="menu-float__sub-item">Elements
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-float__menu-row style-1">
+                                                <div class="menu-float__menu-section">Academy</div>
+                                                <ul class="menu-float__menu-nav">
+                                                    <li>
+                                                        <a href="/academy/" class="menu-float__sub-item">Courses
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/masterclasses/" class="menu-float__sub-item">Masterclasses
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-float__menu-col style-1 ">
+                                            <div class="menu-float__menu-row style-1 ">
+                                                <div class="menu-float__menu-section">Directory</div>
+                                                <ul class="menu-float__menu-nav">
+                                                    <li>
+                                                        <a href="/directory/homepage/" class="menu-float__sub-item ">Professionals
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/directory/international/"
+                                                           class="menu-float__sub-item">Internationals
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/directory/freelance/" class="menu-float__sub-item">Freelancers
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/directory/agency-studio/"
+                                                           class="menu-float__sub-item ">Agencies & Studios
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="menu-float__menu-col style-1 is-active">
+                                            <div class="menu-float__menu-row style-1 ">
+                                                <div class="menu-float__menu-section">w.</div>
+                                                <ul class="menu-float__menu-nav">
+                                                    <li>
+                                                        <a href="/blog/" class="menu-float__sub-item">Blog
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/jobs/" class="menu-float__sub-item">Jobs
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/official-jury/" class="menu-float__sub-item ">Jury
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/market/" class="menu-float__sub-item ">Products</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/honors/nominees" class="menu-float__sub-item ">
+                                                            Awards Honors &nbsp;<span
+                                                                class="budget-tag budget-tag--solid--white">New</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-float__menu" id="menu-filters">
+                                <div class="menu-float__menu-content"></div>
+                            </div>
+                        </div>
+                        <div class="menu-float__bottom">
+                            <div class="menu-float__layout menu-float__layout--primary">
+                                <div class="menu-float__content">
+                                    <a href="/" class="menu-float__logo" aria-label="Awwwards home page">
+                                        <svg width="30" height="16" viewBox="0 0 30 16">
+                                            <path d="m18.4 0-2.803 10.855L12.951 0H9.34L6.693 10.855 3.892 0H0l5.012 15.812h3.425l2.708-10.228 2.709 10.228h3.425L22.29 0h-3.892ZM24.77 13.365c0 1.506 1.12 2.635 2.615 2.635C28.879 16 30 14.87 30 13.365c0-1.506-1.12-2.636-2.615-2.636s-2.615 1.13-2.615 2.636Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="inner">
+            <div class="footer__top">
+                <p class="footer__logo footer__logo--small">
+                    <svg width="30" height="16" viewBox="0 0 30 16">
+                        <path d="m18.4 0-2.803 10.855L12.951 0H9.34L6.693 10.855 3.892 0H0l5.012 15.812h3.425l2.708-10.228 2.709 10.228h3.425L22.29 0h-3.892ZM24.77 13.365c0 1.506 1.12 2.635 2.615 2.635C28.879 16 30 14.87 30 13.365c0-1.506-1.12-2.636-2.615-2.636s-2.615 1.13-2.615 2.636Z"></path>
+                    </svg>
+                </p>
+                <div class="footer__wrapper">
+                    <div class="footer__grid">
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="/websites/">Websites</a>
+                            </li>
+                            <li>
+                                <a href="/collections/search/">Collections</a>
+                            </li>
+                            <li>
+                                <a href="/elements/">Elements</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="/academy/">Academy</a>
+                            </li>
+                            <li>
+                                <a href="/jobs/search/">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="/market/">Market</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="/directory/search/">Directory</a>
+                            </li>
+                            <li>
+                                <a href="https://conference.awwwards.com">Conferences</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__menu">
+                            <li>
+                                <a rel="nofollow" href="/faqs/">FAQs</a>
+                            </li>
+                            <li>
+                                <a rel="nofollow" href="/about-us/">About Us</a>
+                            </li>
+                            <li>
+                                <a rel="nofollow" href="/contact-us/">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-featured">
+                        <div class="box-featured__content">
+                            Next Conferences
+
+                            <svg class="ico-svg box-featured__m" viewbox="0 0 20 20" width="20">
+                                <use xlink:href="https://www.awwwards.com/assets/redesign/images/sprite-icons.svg#calendar"></use>
+                            </svg>
+                            <strong>
+                                <a href="https://conference.awwwards.com" class="link-underlined">Valencia & NYC</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__left">
+                    <ul class="footer__nav">
+                        <li>
+                            <a rel="nofollow" href="/cookies-policy/">Cookies Policy</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="/terms/">Legal Terms</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="/privacy-policy/">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__right">
+                    <ul class="footer__nav">
+                        <li>
+                            <strong>Connect:</strong>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/awwwards">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/awwwards">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/awwwards">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/awwwards">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/awwwardstv">YouTube</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@awwwards.com">TikTok</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.es/awwwards/">Pinterest</a>
+                        </li>
+                        <li class="text-ico" data-webflow>
+                            <strong>Sponsored by</strong>
+                            <a rel="sponsored" target="_blank"
+                               href="https://webflow.com/?utm_source=awwwards&utm_medium=referral&utm_campaign=partnerships&utm_content=footer">
+                                <img width="80" src="https://dhygzobemt712.cloudfront.net/Logo/Full_Logo_Black.svg"
+                                     alt="Webflow">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://assets.awwwards.com/dist/js/runtime.d9fe9b44.js" defer></script>
+    <script src="https://assets.awwwards.com/dist/js/5716.3c7fee44.js" defer></script>
+    <script src="https://assets.awwwards.com/dist/js/188.68d847a8.js" defer></script>
+    <script src="https://assets.awwwards.com/dist/js/9755.1603470d.js" defer></script>
+    <script src="https://assets.awwwards.com/dist/js/9521.4ec1ad74.js" defer></script>
+    <script src="https://assets.awwwards.com/dist/js/9805.824771e4.js" defer></script>
+    <script src="https://assets.awwwards.com/dist/js/redesign_default.8e158c6e.js" defer></script>
+
+</div>
+</body>
+</html>
