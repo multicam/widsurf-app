@@ -1,6 +1,6 @@
 <script>
-  export let videoUrl = '';
   export let title = '';
+  export let videoUrl = '';
   export let description = '';
 </script>
 
@@ -19,6 +19,11 @@
   <div class="video-info">
     <h1 class="video-title">{title}</h1>
     <p class="video-description">{description}</p>
+    <code>{console.log({
+      title,
+      url: `${videoUrl}`,
+      description
+    })};</code>
   </div>
 </div>
 
